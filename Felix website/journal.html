@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A personal photo journal of journeys, city walks and everyday moments by Felix.">
+  <title>Photo Journal — Felix</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body class="journal-page">
+  <div class="scroll-progress" aria-hidden="true"><span></span></div>
+  <header class="site-header">
+    <a class="wordmark" href="index.html" aria-label="Felix, home">F<span>.</span></a>
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="leeds.html">Leeds</a>
+      <a href="#collection" aria-current="page">Journal</a>
+      <a href="reflection.html">Reflection</a>
+    </nav>
+    <a class="header-note" href="index.html#about">Digital Media <span>↗</span></a>
+  </header>
+
+  <main id="top">
+    <section class="journal-hero" aria-labelledby="journal-title">
+      <div class="journal-hero-copy">
+        <p class="eyebrow"><span class="eyebrow-dot"></span> PHOTO DIARY · LEEDS & BEYOND</p>
+        <h1 id="journal-title">Little life,<br><span>in frames.</span></h1>
+        <p>A photo diary of days around Leeds, little trips and the moments in between.</p>
+        <a class="text-link" href="#collection">Scroll through the diary <span aria-hidden="true">↓</span></a>
+      </div>
+      <div class="journal-hero-note" aria-hidden="true">
+        <span class="journal-note-kicker">LITTLE THINGS,</span>
+        <span class="journal-note-title">kept close<br>along the way.</span>
+        <span class="journal-note-mark">✳</span>
+        <span class="journal-note-count">32 PHOTOS · 03 CHAPTERS</span>
+      </div>
+    </section>
+
+    <section class="journal-collection section-block" id="collection" aria-labelledby="collection-title">
+      <div class="section-label"><span>01</span> A PERSONAL COLLECTION</div>
+      <div class="journal-heading">
+        <div>
+          <h2 id="collection-title">From the road to home.</h2>
+          <p>Thirty-two moments, gathered into three little chapters.</p>
+        </div>
+        <span class="journal-total">32 <span>frames</span></span>
+      </div>
+      <div class="gallery-toolbar">
+        <div class="gallery-filters" role="group" aria-label="Filter journal photos">
+          <button class="gallery-filter is-active" type="button" data-filter="all" aria-pressed="true">All <span>32</span></button>
+          <button class="gallery-filter" type="button" data-filter="journey" aria-pressed="false">Wales <span>10</span></button>
+          <button class="gallery-filter" type="button" data-filter="leeds" aria-pressed="false">Leeds <span>10</span></button>
+          <button class="gallery-filter" type="button" data-filter="daily" aria-pressed="false">Everyday <span>12</span></button>
+        </div>
+        <p class="gallery-status" id="gallery-status" aria-live="polite">Showing all 32 photos</p>
+      </div>
+      <section class="journal-chapter" data-journal-section="journey" aria-labelledby="chapter-journey">
+        <header class="chapter-heading">
+          <div class="chapter-copy">
+            <p class="chapter-kicker"><span>01</span> THE WELSH COAST</p>
+            <h3 id="chapter-journey">A little farther out.</h3>
+            <p>Ten frames from winding roads, sea air and old stone.</p>
+          </div>
+          <span class="chapter-count">10 <small>frames</small></span>
+        </header>
+        <div class="journal-gallery">
+        <figure class="journal-photo" data-category="journey">
+          <button class="photo-trigger" type="button" data-gallery="journal" aria-label="View photo: A red cable car above the hills">
+            <img src="assets/journal/red-cable-car.jpg" alt="A small red cable car hangs on cables against a wide blue sky." loading="lazy">
+          </button>
+          <figcaption>A red cable car above the hills</figcaption>
+        </figure>
+        <figure class="journal-photo" data-category="journey">
+          <button class="photo-trigger" type="button" data-gallery="journal" aria-label="View photo: A window seat on the way">
+            <img src="assets/journal/train-window-hills.jpg" alt="Green hills and clouds framed by a train window with Welsh and English safety signs." loading="lazy">
+          </button>
+          <figcaption>A window seat on the way</figcaption>
+        </figure>
+        <figure class="journal-photo" data-category="journey">
+          <button class="photo-trigger" type="button" data-gallery="journal" aria-label="View photo: A view towards Llandudno">
+            <img src="assets/journal/llandudno-view.jpg" alt="A hillside view with a sign pointing towards Llandudno and the copper mines." loading="lazy">
+          </button>
+          <figcaption>A view towards Llandudno</figcaption>
+        </figure>
+        <figure class="journal-photo" data-category="journey">
+          <button class="photo-trigger" type="button" data-gallery="journal" aria-label="View photo: Clouds over the coast">
+            <img src="assets/journal/train-window-coast.jpg" alt="Sunlit clouds, hills and water seen through a train window." loading="lazy">
+          </button>
+          <figcaption>Clouds over the coast</figcaption>
+        </figure>
+        <figure class="journal-photo" data-category="journey">
+          <button class="photo-trigger" type="button" data-gallery="journal" aria-label="View photo: A bright day by the sea">
+            <img src="assets/journal/coastal-grassland.jpg" alt="Open green grassland meets the sea beneath a blue sky." loading="lazy">
+          </button>
+          <figcaption>A bright day by the sea</figcaption>
+        </figure>
+        <figure class="journal-photo" data-category="journey">
+          <button class="photo-trigger" type="button" data-gallery="journal" aria-label="View photo: A seaside lunch">
+            <img src="assets/journal/fish-and-chips.jpg" alt="Fish and chips on a table beside a window, with a small Welsh souvenir bear." loading="lazy">
+          </button>
+          <figcaption>A seaside lunch</figcaption>
+        </figure>
+        <figure class="journal-photo" data-category="journey">
+          <button class="photo-trigger" type="button" data-gallery="journal" aria-label="View photo: Looking up at the castle">
+            <img src="assets/journal/castle-tower.jpg" alt="A round stone castle tower rises into the blue sky." loading="lazy">
+          </button>
+          <figcaption>Looking up at the castle</figcaption>
+        </figure>
+        <figure class="journal-photo" data-category="journey">
+          <button class="photo-trigger" type="button" data-gallery="journal" aria-label="View photo: A view through old stone">
+            <img src="assets/journal/castle-window-view.jpg" alt="A landscape and water framed by a narrow opening in a stone castle wall." loading="lazy">
+          </button>
+          <figcaption>A view through old stone</figcaption>
+        </figure>
+        <figure class="journal-photo" data-category="journey">
+          <button class="photo-trigger" type="button" data-gallery="journal" aria-label="View photo: A quiet view from the castle">
+            <img src="assets/journal/castle-garden-view.jpg" alt="A green garden and water seen through a castle window." loading="lazy">
+          </button>
+          <figcaption>A quiet view from the castle</figcaption>
+        </figure>
+        <figure class="journal-photo" data-category="journey">
+          <button class="photo-trigger" type="button" data-gallery="journal" aria-label="View photo: Castles under a changing sky">
+            <img src="assets/journal/welsh-castle-flags.jpg" alt="Two round stone towers with Welsh flags beneath a cloudy sky." loading="lazy">
+          </button>
+          <figcaption>Castles under a changing sky</figcaption>
+        </figure>
+        </div>
+      </section>
+      <section class="journal-chapter" data-journal-section="leeds" aria-labelledby="chapter-leeds">
+        <header class="chapter-heading">
+          <div class="chapter-copy">
+            <p class="chapter-kicker"><span>02</span> AROUND LEEDS</p>
+            <h3 id="chapter-leeds">Familiar streets, new details.</h3>
+            <p>City walks, green spaces and a few favourite views.</p>
+          </div>
+          <span class="chapter-count">10 <small>frames</small></span>
+        </header>
+        <div class="journal-gallery">
+        <figure class="journal-photo" data-category="leeds">
+          <button class="photo-trigger" type="button" data-gallery="journal" aria-label="View photo: A familiar city tower">
+            <img src="assets/journal/leeds-tower.jpg" alt="A tall stone clock tower rises between Leeds city buildings." loading="lazy">
+          </button>
+          <figcaption>A familiar city tower</figcaption>
+        </figure>
+        <figure class="journal-photo" data-category="leeds">
+          <button class="photo-trigger" type="button" data-gallery="journal" aria-label="View photo: A quiet park after dark">
+            <img src="assets/journal/park-after-dark.jpg" alt="A person sits on a bench beneath a large tree in a softly lit park at night." loading="lazy">
+          </button>
+          <figcaption>A quiet park after dark</figcaption>
+        </figure>
+        <figure class="journal-photo" data-category="leeds">
+          <button class="photo-trigger" type="button" data-gallery="journal" aria-label="View photo: A bright afternoon in the city">
+            <img src="assets/journal/leeds-buses.jpg" alt="Buses and historic buildings on a sunny city street." loading="lazy">
+          </button>
+          <figcaption>A bright afternoon in the city</figcaption>
+        </figure>
+        <figure class="journal-photo" data-category="leeds">
+          <button class="photo-trigger" type="button" data-gallery="journal" aria-label="View photo: A small companion with a big view">
+            <img src="assets/journal/city-view-plush.jpg" alt="A plush toy sits by a window overlooking the city skyline." loading="lazy">
+          </button>
+          <figcaption>A small companion with a big view</figcaption>
+        </figure>
+        <figure class="journal-photo" data-category="leeds">
+          <button class="photo-trigger" type="button" data-gallery="journal" aria-label="View photo: Swans on the lake">
+            <img src="assets/journal/swans-on-the-lake.jpg" alt="A group of swans gathers near the shore beneath a bright sky." loading="lazy">
+          </button>
+          <figcaption>Swans on the lake</figcaption>
+        </figure>
+        <figure class="journal-photo" data-category="leeds">
+          <button class="photo-trigger" type="button" data-gallery="journal" aria-label="View photo: A sunny pause in the park">
+            <img src="assets/journal/park-bench.jpg" alt="A wooden bench sits beneath a tree in a sunny park." loading="lazy">
+          </button>
+          <figcaption>A sunny pause in the park</figcaption>
+        </figure>
+        <figure class="journal-photo" data-category="leeds">
+          <button class="photo-trigger" type="button" data-gallery="journal" aria-label="View photo: A wall full of colour">
+            <img src="assets/journal/street-art.jpg" alt="A large street mural painted across a brick wall." loading="lazy">
+          </button>
+          <figcaption>A wall full of colour</figcaption>
+        </figure>
+        <figure class="journal-photo" data-category="leeds">
+          <button class="photo-trigger" type="button" data-gallery="journal" aria-label="View photo: A church at the end of the street">
+            <img src="assets/journal/church-street.jpg" alt="A stone church spire framed by city buildings and a quiet road." loading="lazy">
+          </button>
+          <figcaption>A church at the end of the street</figcaption>
+        </figure>
+        <figure class="journal-photo" data-category="leeds">
+          <button class="photo-trigger" type="button" data-gallery="journal" aria-label="View photo: Under the market roof">
+            <img src="assets/journal/covered-market.jpg" alt="A colourful glass roof spans an indoor shopping arcade." loading="lazy">
+          </button>
+          <figcaption>Under the market roof</figcaption>
+        </figure>
+        <figure class="journal-photo" data-category="leeds">
+          <button class="photo-trigger" type="button" data-gallery="journal" aria-label="View photo: A sculpture in the garden">
+            <img src="assets/journal/garden-sculpture.jpg" alt="A reclining figure sculpture stands among flowers in a brick courtyard." loading="lazy">
+          </button>
+          <figcaption>A sculpture in the garden</figcaption>
+        </figure>
+        </div>
+      </section>
+      <section class="journal-chapter" data-journal-section="daily" aria-labelledby="chapter-daily">
+        <header class="chapter-heading">
+          <div class="chapter-copy">
+            <p class="chapter-kicker"><span>03</span> LIFE IN BETWEEN</p>
+            <h3 id="chapter-daily">The everyday, kept close.</h3>
+            <p>Small things from home, food stops and the bits in between.</p>
+          </div>
+          <span class="chapter-count">12 <small>frames</small></span>
+        </header>
+        <div class="journal-gallery">
+        <figure class="journal-photo" data-category="daily">
+          <button class="photo-trigger" type="button" data-gallery="journal" aria-label="View photo: A plate of custard tarts">
+            <img src="assets/journal/custard-tarts.jpg" alt="Five golden custard tarts arranged on a white plate." loading="lazy">
+          </button>
+          <figcaption>A plate of custard tarts</figcaption>
+        </figure>
+        <figure class="journal-photo" data-category="daily">
+          <button class="photo-trigger" type="button" data-gallery="journal" aria-label="View photo: A drink with a view">
+            <img src="assets/journal/gin-and-tonic.jpg" alt="A glass with lemon beside a bottle of London dry gin." loading="lazy">
+          </button>
+          <figcaption>A drink with a view</figcaption>
+        </figure>
+        <figure class="journal-photo" data-category="daily">
+          <button class="photo-trigger" type="button" data-gallery="journal" aria-label="View photo: A glass of whiskey and ice">
+            <img src="assets/journal/whiskey-and-ice.jpg" alt="A glass with ice and lemon beside a bottle of Irish whiskey." loading="lazy">
+          </button>
+          <figcaption>A glass of whiskey and ice</figcaption>
+        </figure>
+        <figure class="journal-photo" data-category="daily">
+          <button class="photo-trigger" type="button" data-gallery="journal" aria-label="View photo: A colourful new friend">
+            <img src="assets/journal/green-plush-toy.jpg" alt="A green and purple plush character held in a shop." loading="lazy">
+          </button>
+          <figcaption>A colourful new friend</figcaption>
+        </figure>
+        <figure class="journal-photo" data-category="daily">
+          <button class="photo-trigger" type="button" data-gallery="journal" aria-label="View photo: Dinner as the city lights come on">
+            <img src="assets/journal/dinner-at-sunset.jpg" alt="A dinner table and candle by a window overlooking the city at sunset." loading="lazy">
+          </button>
+          <figcaption>Dinner as the city lights come on</figcaption>
+        </figure>
+        <figure class="journal-photo" data-category="daily">
+          <button class="photo-trigger" type="button" data-gallery="journal" aria-label="View photo: A little dog at home">
+            <img src="assets/journal/little-white-dog.jpg" alt="A small white dog in a red jumper sits beside red envelopes." loading="lazy">
+          </button>
+          <figcaption>A little dog at home</figcaption>
+        </figure>
+        <figure class="journal-photo" data-category="daily">
+          <button class="photo-trigger" type="button" data-gallery="journal" aria-label="View photo: A look around the drinks aisle">
+            <img src="assets/journal/local-beer-aisle.jpg" alt="Rows of beer and other drinks on a supermarket shelf." loading="lazy">
+          </button>
+          <figcaption>A look around the drinks aisle</figcaption>
+        </figure>
+        <figure class="journal-photo" data-category="daily">
+          <button class="photo-trigger" type="button" data-gallery="journal" aria-label="View photo: A cocktail at the table">
+            <img src="assets/journal/smoky-cocktail.jpg" alt="A clear cocktail with ice and a curl of smoke in a dim bar." loading="lazy">
+          </button>
+          <figcaption>A cocktail at the table</figcaption>
+        </figure>
+        <figure class="journal-photo" data-category="daily">
+          <button class="photo-trigger" type="button" data-gallery="journal" aria-label="View photo: Dinner taking shape">
+            <img src="assets/journal/simmering-dinner.jpg" alt="Pieces of meat simmer in a pan on the stove." loading="lazy">
+          </button>
+          <figcaption>Dinner taking shape</figcaption>
+        </figure>
+        <figure class="journal-photo" data-category="daily">
+          <button class="photo-trigger" type="button" data-gallery="journal" aria-label="View photo: A colourful shop display">
+            <img src="assets/journal/colourful-ceramics.jpg" alt="Brightly coloured ceramic pots and vases arranged on shelves." loading="lazy">
+          </button>
+          <figcaption>A colourful shop display</figcaption>
+        </figure>
+        <figure class="journal-photo" data-category="daily">
+          <button class="photo-trigger" type="button" data-gallery="journal" aria-label="View photo: A simple dinner at home">
+            <img src="assets/journal/lemon-tea-dinner.jpg" alt="A bowl of rice, soup and vegetables with a glass of lemon tea." loading="lazy">
+          </button>
+          <figcaption>A simple dinner at home</figcaption>
+        </figure>
+        <figure class="journal-photo" data-category="daily">
+          <button class="photo-trigger" type="button" data-gallery="journal" aria-label="View photo: Dinner around the table">
+            <img src="assets/journal/home-cooked-meal.jpg" alt="A home-cooked meal on the kitchen table by the window." loading="lazy">
+          </button>
+          <figcaption>Dinner around the table</figcaption>
+        </figure>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <button class="back-to-top-float" type="button" aria-label="Back to top">↑</button>
+  <footer class="site-footer">
+    <a class="wordmark" href="index.html" aria-label="Back to home">F<span>.</span></a>
+    <p>Made by Felix <span>·</span> Digital Media, University of Leeds</p>
+    <a class="back-to-top" href="#top">Back to top ↑</a>
+  </footer>
+  <dialog class="photo-viewer" id="photo-viewer" aria-label="Photo viewer">
+    <div class="viewer-toolbar">
+      <p class="viewer-counter" id="viewer-counter"></p>
+      <button class="viewer-close" type="button" aria-label="Close photo viewer">Close <span aria-hidden="true">×</span></button>
+    </div>
+    <button class="viewer-arrow viewer-previous" type="button" aria-label="Previous photo">←</button>
+    <figure class="viewer-figure">
+      <img id="viewer-image" src="" alt="">
+      <figcaption id="viewer-caption"></figcaption>
+    </figure>
+    <button class="viewer-arrow viewer-next" type="button" aria-label="Next photo">→</button>
+  </dialog>
+  <script src="site.js" defer></script>
+</body>
+</html>
