@@ -151,7 +151,7 @@
   const switchButton = document.getElementById('interest-switch');
   if (switchButton) {
     const slides = [
-      { caption: 'Curious about', title: 'AI video<br>generation', description: 'New tools, new images, new ways to tell a story.', core: 'AI', label: 'Show R&B interest' },
+      { caption: 'Curious about', title: 'AI video<br>generation', description: 'How do prompts, images and editing choices shape a story?', core: 'AI', label: 'Show R&B interest' },
       { caption: 'Always playing', title: 'R&amp;B<br>music', description: 'A soundtrack for study breaks, walks and slow mornings.', core: '♫', label: 'Show AI video interest' },
     ];
     const copy = document.getElementById('interest-copy');
