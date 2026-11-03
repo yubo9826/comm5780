@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Notes on building Felix’s Digital Media portfolio: choosing photographs, organising the pages and refining the website’s content.">
-  <title>Project Reflection — Felix</title>
+  <meta name="description" content="Felix’s Digital Practices workshop reflections on collecting, classifying and visualising university AI policy data, with evidence, ethical questions and limitations.">
+  <title>Workshop Reflections — Felix</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
@@ -18,156 +18,120 @@
       <a href="index.html">Home</a>
       <a href="leeds.html">Leeds</a>
       <a href="journal.html">Journal</a>
-      <a href="reflection.html" aria-current="page">Reflection</a>
+      <a href="reflection.html" aria-current="page">Reflections</a>
     </nav>
-    <a class="header-note" href="index.html#about">Digital Media <span>↗</span></a>
+    <a class="header-note" href="index.html#modules">Digital Media <span>↗</span></a>
   </header>
 
   <main id="top">
-    <section class="reflection-hero" aria-labelledby="reflection-title">
-      <p class="eyebrow"><span class="eyebrow-dot"></span> DIGITAL PRACTICES · PROJECT NOTES</p>
-      <h1 id="reflection-title">Learning as<br><span>I build.</span></h1>
-      <p>A record of the choices behind this portfolio: what each page is for, how the photographs fit together and what still needs attention. Weeks 01–04 look back on earlier versions; Week 05 records the latest changes.</p>
+    <section class="reflection-hero workshop-hero" aria-labelledby="reflection-title">
+      <p class="eyebrow"><span class="eyebrow-dot"></span> COMM5780M · DIGITAL PRACTICES</p>
+      <h1 id="reflection-title">Workshop<br><span>reflections.</span></h1>
+      <p class="workshop-intro">Reflections on the methods, choices and ethical questions in my workshop work, supported by the saved dataset and visualisations.</p>
+      <nav class="workshop-jumps" aria-label="Reflection entries">
+        <a href="#week-5">Week 5 · Data visualisation</a>
+        <a href="#week-4">Week 4 · Data collection</a>
+        <a href="development.html">Website development notes</a>
+      </nav>
     </section>
 
-    <section class="reflection-content section-block" id="reflection" aria-labelledby="week-one-title">
-      <div class="section-label"><span>01</span> THE STARTING POINT</div>
-      <div class="reflection-heading">
+    <article class="workshop-entry section-block" id="week-5" aria-labelledby="week-5-title">
+      <div class="section-label"><span>05</span> DATA VISUALISATION</div>
+      <header class="reflection-heading">
         <div>
-          <p class="reflection-kicker">WEEK 01 · FIRST VERSION</p>
-          <h2 id="week-one-title">Finding a starting point.</h2>
+          <p class="workshop-meta">Workshop work: <time datetime="2026-10-29">29 October 2026</time> · Published: <time datetime="2026-11-03">3 November 2026</time></p>
+          <h2 id="week-5-title">Week 5 — What a chart makes visible.</h2>
         </div>
-        <span class="reflection-mark" aria-hidden="true">01</span>
+      </header>
+      <div class="workshop-body">
+        <h3>The task, question and audience</h3>
+        <p>For the data visualisation task, I worked with the saved dataset of twelve UK universities’ generative AI policies: six Russell Group and six non-Russell Group institutions. The question was how recorded conditions of use and declaration requirements differed between these groups. The resulting workbook and report, dated 29 October, provide the evidence for this reflection. They are a small coded snapshot, not a description of current policies or a ranking of universities.</p>
+        <p>The intended audience was students and classmates trying to understand assessment rules. I wanted readers to recognise that permission to use AI is often conditional, then check their own assessment instructions. The workshop’s audience questions, attributed to O’Halloran (2014), cited in Feigenbaum and Alamalhodaei (2020, p. 21), helped connect the chart’s purpose to a practical action.</p>
+        <p>Used as a policy comparison, the same records need their uncertainty and sampling limits foregrounded. Used as student guidance, the priority changes to assessment-specific conditions and where to seek clarification. This made me realise that a dataset’s usefulness depends on the question being asked, rather than on how complete its table looks.</p>
+
+        <h3>What the visualisations show</h3>
+        <p>In the coded sample, conditional use accounts for ten records: four Russell Group institutions and all six non-Russell Group institutions. No record is coded as a full ban. That pattern does not demonstrate that one group is stricter. Each group contains only six institutions, and the categories describe different conditions rather than points on a reliable scale.</p>
+        <figure class="workshop-figure">
+          <img src="assets/week5-policy.png" alt="Grouped column chart of policy conditions for six Russell Group and six non-Russell Group universities; exact counts are provided in the following table." loading="lazy">
+          <figcaption>Figure 1. Policy categories in the saved sample. Uncertain records remain visible instead of being treated as confirmed policy characteristics.</figcaption>
+        </figure>
+        <div class="workshop-table-wrap">
+          <table>
+            <caption>Policy categories in the coded sample — six universities per group</caption>
+            <thead><tr><th scope="col">Recorded category</th><th scope="col">Russell Group</th><th scope="col">Non-Russell Group</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">Conditional use: declaration or task-specific approval</th><td>4</td><td>6</td></tr>
+              <tr><th scope="row">General declaration requirement not established</th><td>1</td><td>0</td></tr>
+              <tr><th scope="row">Incomplete evidence</th><td>1</td><td>0</td></tr>
+              <tr><th scope="row">Full ban</th><td>0</td><td>0</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="evidence-links"><a href="assets/week5-category-counts.csv" download>Download the category counts (CSV)</a></p>
+
+        <h3>Classification and uncertainty</h3>
+        <p>The hardest methodological issue was deciding what an uncertain record could support. Nottingham’s note records incomplete access to its policy. This cannot establish that its rules are vague or that support is weak. For Bristol, the reviewed material did not establish a general declaration requirement; that is different from proving that declarations are unnecessary. Preserving these distinctions changed the interpretation from a simple comparison into a more cautious account of the evidence.</p>
+        <p>My understanding of the dataset also changed with its purpose. It could show differences between recorded categories, but it could not reliably answer which university was “most strict”. Averaging the numerical codes would conceal this problem: the numbers label categories and do not share a consistent numerical meaning.</p>
+
+        <h3>Design choices and their consequences</h3>
+        <p>The figures use grouped columns, a zero baseline and consistent colours for the two university groups. Counts are easier to interpret here than percentages alone: one institution represents roughly 16.7 percentage points. Written category labels and visible uncertainty help prevent the visual simplicity of a chart from suggesting greater certainty than the source material allows.</p>
+        <figure class="workshop-figure">
+          <img src="assets/week5-declaration.png" alt="Grouped column chart of declaration categories: each university group has three records coded as declaration for all AI use; assessment-specific declaration has one Russell Group and three non-Russell Group records, alongside one not-established and one incomplete Russell Group record." loading="lazy">
+          <figcaption>Figure 2. Declaration categories. “Not established” refers to Bristol; “incomplete evidence” refers to Nottingham.</figcaption>
+        </figure>
+        <p>I left sanctions out of these charts because the notes did not consistently distinguish general misconduct penalties from AI-specific consequences. An apparently clear comparison would therefore have depended on uneven evidence. Choosing what not to visualise was part of the analysis, rather than simply a design preference.</p>
+
+        <h3>Data, power and ethical responsibility</h3>
+        <p>The “Examine Power” principle in D’Ignazio and Klein’s <cite>Data Feminism</cite> offers a useful question: whose account becomes visible? This dataset privileges official institutional descriptions. It excludes students’ experiences, informal advice and actual disciplinary decisions. A polished chart could make those absences less noticeable and encourage readers to mistake written rules for consistent or fair enforcement. Publishing institutional categories is therefore an interpretive choice, not a neutral view of university life.</p>
+        <p>There is also a reputational risk in labelling a named institution as permissive or unclear on incomplete evidence. I should make the evidential limit as prominent as the institution’s name. The published figures contain institutional categories, not student names, usernames or individual cases; adding personal accounts would require a separate ethical decision.</p>
+
+        <h3>What I would improve</h3>
+        <p>I would attach a source URL, access date and supporting excerpt to every code, resolve inaccessible material and ask a second coder to compare classifications. I would also separate policy permission, disclosure and consequences more clearly, then seek ethically collected, anonymised student perspectives. These changes would make uncertainty traceable and let a future visualisation address a wider question without claiming that the present sample already answers it.</p>
+
+        <aside class="workshop-callout" aria-label="Process and assistance note">
+          <h3>Process note</h3>
+          <p>AI-assisted tools helped compile policy records, prepare spreadsheets and charts, and draft the text. This post was revised from the saved workshop outputs on 3 November 2026; the policy source trail remains an area for further checking.</p>
+        </aside>
+        <div class="workshop-references">
+          <h3>Materials and references</h3>
+          <ul>
+            <li><a href="https://minerva.leeds.ac.uk/ultra/courses/_574716_1/document/_14202656_1?view=content&amp;state=view">COMM5780M portfolio guidance on Minerva</a> — includes the instruction to reflect on Week 5 and use visualisation evidence; University sign-in required.</li>
+            <li>D’Ignazio, C. and Klein, L. F. (2020). <cite>Data Feminism</cite>, <a href="https://data-feminism.mitpress.mit.edu/pub/vi8obxh7/release/4">“Examine Power”</a>.</li>
+            <li>Feigenbaum, A. and Alamalhodaei, A. (2020). <a href="https://www.perlego.com/book/2194057"><cite>The Data Storytelling Workbook</cite></a>. The workshop attributes its audience prompts to O’Halloran (2014), cited on p. 21.</li>
+            <li>Evidence: the saved twelve-university dataset, coding key, charts and bilingual workshop report prepared on 29 October 2026. Findings above refer to that snapshot, not newly verified university policy.</li>
+          </ul>
+        </div>
       </div>
-      <div class="reflection-grid">
-        <article class="reflection-card">
-          <span class="reflection-card-index">01 / WHAT I MADE</span>
-          <h3>A personal space online.</h3>
-          <p>I brought together an introduction, my life in Leeds and a photo journal. The homepage introduces me, the Leeds page provides a sense of place, and the journal lets the photographs carry more of the story.</p>
-        </article>
-        <article class="reflection-card">
-          <span class="reflection-card-index">02 / WHAT I LEARNED</span>
-          <h3>Small details shape the experience.</h3>
-          <p>Choosing images and arranging content takes more thought than I expected. A photograph needs context, and a link needs a clear destination. Consistent navigation helps visitors move between the personal and academic parts of the site.</p>
-        </article>
-        <article class="reflection-card reflection-card-next">
-          <span class="reflection-card-index">03 / AN OPEN QUESTION</span>
-          <h3>Refine one thing at a time.</h3>
-          <p>How much text helps a photograph, and when does it get in the way? I want to keep enough context for visitors to follow the collection while leaving room to look at the images.</p>
-        </article>
-      </div>
-    </section>
-    <section class="reflection-content section-block" id="week-two" aria-labelledby="week-two-title">
-      <div class="section-label"><span>02</span> CAMPUS &amp; EVERYDAY LIFE</div>
-      <div class="reflection-heading">
+    </article>
+
+    <article class="workshop-entry section-block" id="week-4" aria-labelledby="week-4-title">
+      <div class="section-label"><span>04</span> COLLECTING &amp; CLASSIFYING DATA</div>
+      <header class="reflection-heading">
         <div>
-          <p class="reflection-kicker">WEEK 02 · LOOKING BACK</p>
-          <h2 id="week-two-title">Giving Leeds its own space.</h2>
+          <p class="workshop-meta">Retrospective reflection · Published: <time datetime="2026-11-03">3 November 2026</time></p>
+          <h2 id="week-4-title">Week 4 — What counts as policy data?</h2>
         </div>
-        <span class="reflection-mark" aria-hidden="true">02</span>
+      </header>
+      <div class="workshop-body">
+        <p>This entry looks back at the saved collection and coding work used for the later visualisation. It is being written retrospectively, rather than presented as a diary recorded during the workshop.</p>
+        <h3>From a broad question to a table</h3>
+        <p>The initial comparison concerned university AI policies. Turning that interest into a dataset required a unit of analysis: one row per university. The columns separated university type, definition clarity, policy conditions, sanctions, guidance and declaration rules. This made comparison possible, but it also required interpreting complex documents as a small set of categories.</p>
+        <h3>What the coding could hide</h3>
+        <p>The saved notes reveal a problem with treating missing information as a finding. Nottingham’s incomplete policy access did not justify a confident judgement about its rules. Bristol’s record also required distinguishing an unestablished declaration requirement from an absent requirement. These cases showed why the coding key needed to explain both the categories and the limits of the evidence.</p>
+        <h3>Whose perspective was included?</h3>
+        <p>Official documents made institutional rules visible while leaving student experience outside the table. In relation to D’Ignazio and Klein’s “Examine Power” principle, that imbalance matters: the institution defines the categories of acceptable behaviour, but affected students may experience them differently. The dataset could compare recorded policy descriptions; it could not establish how rules were understood or applied.</p>
+        <h3>What I would change</h3>
+        <p>I would preserve a supporting excerpt and access date for each decision, distinguish missing evidence explicitly, and test the categories with another coder. I would also document why these twelve institutions were selected. That would make the collection process easier to question, reproduce and improve.</p>
       </div>
-      <div class="reflection-grid">
-        <article class="reflection-card">
-          <span class="reflection-card-index">01 / WHAT I DEVELOPED</span>
-          <h3>From campus to everyday life.</h3>
-          <p>I developed the Leeds page around two parts: the university campus and everyday life. Official campus photographs introduce the buildings, while my five personal photographs show city views and meals at home. Keeping these parts together gives visitors a more personal picture of where I study.</p>
-        </article>
-        <article class="reflection-card">
-          <span class="reflection-card-index">02 / WHAT I LEARNED</span>
-          <h3>Images need context and credit.</h3>
-          <p>Using photographs from different sources made clear credits important. I needed to distinguish the University’s images from my own and provide a link to the original campus tour. Captions also helped explain why each photograph belonged on the page.</p>
-        </article>
-        <article class="reflection-card reflection-card-next">
-          <span class="reflection-card-index">03 / A QUESTION TO TAKE FORWARD</span>
-          <h3>How should a gallery feel?</h3>
-          <p>The next question was how visitors could explore the photographs comfortably. A gallery needed to work on a small screen, keep the images readable and offer a clear way to take a closer look. This became a useful direction for the later photo journal.</p>
-        </article>
+    </article>
+
+    <aside class="page-next section-block" aria-labelledby="development-notes-title">
+      <div>
+        <p class="next-kicker">A SEPARATE MAKING PROCESS</p>
+        <h2 id="development-notes-title">Website development notes.</h2>
+        <p>The earlier notes on layout, photographs and navigation are preserved separately from these workshop reflections.</p>
       </div>
-    </section>
-    <section class="reflection-content section-block" id="week-three" aria-labelledby="week-three-title">
-      <div class="section-label"><span>03</span> THE PHOTO JOURNAL</div>
-      <div class="reflection-heading">
-        <div>
-          <p class="reflection-kicker">WEEK 03 · LOOKING BACK</p>
-          <h2 id="week-three-title">Turning photographs into a journal.</h2>
-        </div>
-        <span class="reflection-mark" aria-hidden="true">03</span>
-      </div>
-      <div class="reflection-grid">
-        <article class="reflection-card">
-          <span class="reflection-card-index">01 / WHAT I DEVELOPED</span>
-          <h3>A collection with three chapters.</h3>
-          <p>The photo journal grew into a collection of 32 photographs, organised around the Welsh coast, Leeds and everyday moments. Category filters and a larger image viewer gave visitors different ways to browse. Short captions helped connect the individual photographs to each chapter.</p>
-        </article>
-        <article class="reflection-card">
-          <span class="reflection-card-index">02 / WHAT I LEARNED</span>
-          <h3>Organisation changes the story.</h3>
-          <p>Grouping photographs by place and theme gave the collection a clearer rhythm. I could move from a journey to familiar streets and then to life at home. Showing the full photographs also helped preserve details that could be lost in a tightly cropped grid.</p>
-        </article>
-        <article class="reflection-card reflection-card-next">
-          <span class="reflection-card-index">03 / A QUESTION TO TAKE FORWARD</span>
-          <h3>Keep browsing simple.</h3>
-          <p>With more photographs on the page, the controls needed to remain easy to understand. I wanted the filters, captions and image viewer to support the collection without competing with it. The wider site also needed a clearer visual connection to the journal.</p>
-        </article>
-      </div>
-    </section>
-    <section class="reflection-content section-block" id="week-four" aria-labelledby="week-four-title">
-      <div class="section-label"><span>04</span> VISUAL STYLE &amp; REFLECTION</div>
-      <div class="reflection-heading">
-        <div>
-          <p class="reflection-kicker">WEEK 04 · LOOKING BACK</p>
-          <h2 id="week-four-title">Bringing the pages together.</h2>
-        </div>
-        <span class="reflection-mark" aria-hidden="true">04</span>
-      </div>
-      <div class="reflection-grid">
-        <article class="reflection-card">
-          <span class="reflection-card-index">01 / WHAT I REFINED</span>
-          <h3>A calmer, more connected style.</h3>
-          <p>I refined the site with a warm background, green and terracotta accents, serif headings and more space around the content. Selected photographs on the homepage linked into the journal’s chapters. A separate reflection page also gave the making process a place within the portfolio.</p>
-        </article>
-        <article class="reflection-card">
-          <span class="reflection-card-index">02 / WHAT I LEARNED</span>
-          <h3>Consistency helps people find their way.</h3>
-          <p>Shared colours, type and spacing made the separate pages feel more connected. The selected photographs gave visitors a preview of the journal before opening it. This showed me how visual choices can guide someone through a site as well as shape its appearance.</p>
-        </article>
-        <article class="reflection-card reflection-card-next">
-          <span class="reflection-card-index">03 / A QUESTION TO TAKE FORWARD</span>
-          <h3>Review the reading experience.</h3>
-          <p>The next step was to review the wording and check the pages on a phone. I wanted each link to describe its destination clearly and each section to add something useful. That would help the site communicate more clearly as the content continued to grow.</p>
-        </article>
-      </div>
-    </section>
-    <section class="reflection-content section-block" id="content-review" aria-labelledby="content-review-title">
-      <div class="section-label"><span>05</span> CONTENT &amp; NAVIGATION</div>
-      <div class="reflection-heading">
-        <div>
-          <p class="reflection-kicker">WEEK 05 · <time datetime="2026-10-29">29 OCTOBER 2026</time></p>
-          <h2 id="content-review-title">Making the site easier to follow.</h2>
-        </div>
-        <span class="reflection-mark" aria-hidden="true">05</span>
-      </div>
-      <div class="reflection-grid">
-        <article class="reflection-card">
-          <span class="reflection-card-index">01 / WHAT I CHANGED</span>
-          <h3>Clearer words, clearer routes.</h3>
-          <p>I rewrote my introduction and added a personal focus to the module cards. The homepage now links directly to Leeds, the photo journal and these notes. I also added chapter introductions, clarified photo credits and fixed the homepage’s crowded mobile layout.</p>
-        </article>
-        <article class="reflection-card">
-          <span class="reflection-card-index">02 / WHAT I LEARNED</span>
-          <h3>Words are part of navigation.</h3>
-          <p>A card’s title, description and destination need to work together so visitors know what to expect. Checking the site on a narrow screen also showed me how easily a layout can become difficult to read. Reviewing the words and the layout together helped me make the pages easier to follow.</p>
-        </article>
-        <article class="reflection-card reflection-card-next">
-          <span class="reflection-card-index">03 / NEXT STEP</span>
-          <h3>Try a small creative case study.</h3>
-          <p>Next, I want to add one example of visual storytelling, using a few images or a short clip with a brief explanation of my creative choices. I’ll keep it small so I can develop the work gradually and reflect on what changes along the way.</p>
-        </article>
-      </div>
-    </section>
-    <aside class="page-next section-block" aria-labelledby="reflection-next-title">
-      <div><p class="next-kicker">BACK TO THE PHOTOGRAPHS</p><h2 id="reflection-next-title">See the choices in context.</h2><p>Explore the three chapters of the journal, from the Welsh coast to everyday life at home.</p></div>
-      <a class="text-link" href="journal.html">Browse the photo journal <span aria-hidden="true">→</span></a>
+      <a class="text-link" href="development.html">Read the development notes <span aria-hidden="true">→</span></a>
     </aside>
   </main>
 
