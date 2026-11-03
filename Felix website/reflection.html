@@ -27,7 +27,7 @@
     <section class="reflection-hero workshop-hero" aria-labelledby="reflection-title">
       <p class="eyebrow"><span class="eyebrow-dot"></span> COMM5780M · DIGITAL PRACTICES</p>
       <h1 id="reflection-title">Workshop<br><span>reflections.</span></h1>
-      <p class="workshop-intro">Reflections on the methods, choices and ethical questions in my workshop work, supported by the saved dataset and visualisations.</p>
+      <p class="workshop-intro">What I worked on in the workshops, what I learned from it, and what I’d change next time.</p>
       <nav class="workshop-jumps" aria-label="Reflection entries">
         <a href="#week-5">Week 5 · Data visualisation</a>
         <a href="#week-4">Week 4 · Data collection</a>
@@ -40,20 +40,20 @@
       <header class="reflection-heading">
         <div>
           <p class="workshop-meta">Workshop work: <time datetime="2026-10-29">29 October 2026</time> · Published: <time datetime="2026-11-03">3 November 2026</time></p>
-          <h2 id="week-5-title">Week 5 — What a chart makes visible.</h2>
+          <h2 id="week-5-title">Week 5 — Making sense of the charts.</h2>
         </div>
       </header>
       <div class="workshop-body">
-        <h3>The task, question and audience</h3>
-        <p>For the data visualisation task, I worked with the saved dataset of twelve UK universities’ generative AI policies: six Russell Group and six non-Russell Group institutions. The question was how recorded conditions of use and declaration requirements differed between these groups. The resulting workbook and report, dated 29 October, provide the evidence for this reflection. They are a small coded snapshot, not a description of current policies or a ranking of universities.</p>
-        <p>The intended audience was students and classmates trying to understand assessment rules. I wanted readers to recognise that permission to use AI is often conditional, then check their own assessment instructions. The workshop’s audience questions, attributed to O’Halloran (2014), cited in Feigenbaum and Alamalhodaei (2020, p. 21), helped connect the chart’s purpose to a practical action.</p>
-        <p>Used as a policy comparison, the same records need their uncertainty and sampling limits foregrounded. Used as student guidance, the priority changes to assessment-specific conditions and where to seek clarification. This made me realise that a dataset’s usefulness depends on the question being asked, rather than on how complete its table looks.</p>
+        <h3>What I wanted to find out</h3>
+        <p>For this task, I used the AI-policy data in my workbook and report from 29 October. It covers twelve UK universities: six Russell Group and six non-Russell Group. I wanted to compare what the two groups allowed and when students had to declare AI use. These records capture what was collected at the time, so I can’t use them as a guide to today’s rules.</p>
+        <p>I had other students in mind as the audience. The main message was that being allowed to use AI often comes with conditions, so it’s still important to check the instructions for a particular assignment. The workshop’s audience questions helped me think about what someone should do after seeing the charts (Feigenbaum and Alamalhodaei, 2020, p. 21).</p>
+        <p>The purpose makes a difference. For a comparison, I need to explain what the sample can and can’t show. To help someone with an assignment, I’d need more detail about that specific task. Having a full spreadsheet doesn’t mean it answers both questions equally well.</p>
 
-        <h3>What the visualisations show</h3>
-        <p>In the coded sample, conditional use accounts for ten records: four Russell Group institutions and all six non-Russell Group institutions. No record is coded as a full ban. That pattern does not demonstrate that one group is stricter. Each group contains only six institutions, and the categories describe different conditions rather than points on a reliable scale.</p>
+        <h3>What came out of the charts</h3>
+        <p>Ten of the twelve records fall under conditional AI use: four Russell Group universities and all six non-Russell Group universities. None is coded as a full ban. It would be too big a jump to say one group is stricter, though. There are only six universities in each group, and the categories don’t give a complete picture of how strict their rules are.</p>
         <figure class="workshop-figure">
           <img src="assets/week5-policy.png" alt="Grouped column chart of policy conditions for six Russell Group and six non-Russell Group universities; exact counts are provided in the following table." loading="lazy">
-          <figcaption>Figure 1. Policy categories in the saved sample. Uncertain records remain visible instead of being treated as confirmed policy characteristics.</figcaption>
+          <figcaption>Figure 1. The categories in the saved dataset. I’ve kept the uncertain records visible so readers can see where the evidence is incomplete.</figcaption>
         </figure>
         <div class="workshop-table-wrap">
           <table>
@@ -69,28 +69,28 @@
         </div>
         <p class="evidence-links"><a href="assets/week5-category-counts.csv" download>Download the category counts (CSV)</a></p>
 
-        <h3>Classification and uncertainty</h3>
-        <p>The hardest methodological issue was deciding what an uncertain record could support. Nottingham’s note records incomplete access to its policy. This cannot establish that its rules are vague or that support is weak. For Bristol, the reviewed material did not establish a general declaration requirement; that is different from proving that declarations are unnecessary. Preserving these distinctions changed the interpretation from a simple comparison into a more cautious account of the evidence.</p>
-        <p>My understanding of the dataset also changed with its purpose. It could show differences between recorded categories, but it could not reliably answer which university was “most strict”. Averaging the numerical codes would conceal this problem: the numbers label categories and do not share a consistent numerical meaning.</p>
+        <h3>The part that needed more care</h3>
+        <p>Nottingham shows why the categories needed checking. The collection notes say the full policy couldn’t be accessed. That doesn’t tell me its rules are vague or its support is weak. For Bristol, the material reviewed didn’t establish a general declaration requirement. That’s also different from saying students never need to declare AI use. These cases made me more careful about what I could say from the table.</p>
+        <p>I also couldn’t just average the codes and call the result a strictness score. The numbers stand for categories, so an average wouldn’t explain the differences between the policies. Keeping the labels visible was more useful here.</p>
 
-        <h3>Design choices and their consequences</h3>
-        <p>The figures use grouped columns, a zero baseline and consistent colours for the two university groups. Counts are easier to interpret here than percentages alone: one institution represents roughly 16.7 percentage points. Written category labels and visible uncertainty help prevent the visual simplicity of a chart from suggesting greater certainty than the source material allows.</p>
+        <h3>Why I used these charts</h3>
+        <p>I used grouped columns to put the two groups side by side. Both charts start at zero and use the same colour for each group. I kept the counts visible because percentages alone can look quite dramatic in a small sample: one university is about 16.7 percentage points. The labels also help explain what each bar actually means.</p>
         <figure class="workshop-figure">
           <img src="assets/week5-declaration.png" alt="Grouped column chart of declaration categories: each university group has three records coded as declaration for all AI use; assessment-specific declaration has one Russell Group and three non-Russell Group records, alongside one not-established and one incomplete Russell Group record." loading="lazy">
           <figcaption>Figure 2. Declaration categories. “Not established” refers to Bristol; “incomplete evidence” refers to Nottingham.</figcaption>
         </figure>
-        <p>I left sanctions out of these charts because the notes did not consistently distinguish general misconduct penalties from AI-specific consequences. An apparently clear comparison would therefore have depended on uneven evidence. Choosing what not to visualise was part of the analysis, rather than simply a design preference.</p>
+        <p>I left sanctions out because the notes didn’t consistently separate general academic misconduct penalties from penalties specifically linked to AI. Putting them into a chart could make the comparison look more reliable than it was. Leaving a variable out can be a useful decision too.</p>
 
-        <h3>Data, power and ethical responsibility</h3>
-        <p>The “Examine Power” principle in D’Ignazio and Klein’s <cite>Data Feminism</cite> offers a useful question: whose account becomes visible? This dataset privileges official institutional descriptions. It excludes students’ experiences, informal advice and actual disciplinary decisions. A polished chart could make those absences less noticeable and encourage readers to mistake written rules for consistent or fair enforcement. Publishing institutional categories is therefore an interpretive choice, not a neutral view of university life.</p>
-        <p>There is also a reputational risk in labelling a named institution as permissive or unclear on incomplete evidence. I should make the evidential limit as prominent as the institution’s name. The published figures contain institutional categories, not student names, usernames or individual cases; adding personal accounts would require a separate ethical decision.</p>
+        <h3>Whose side of the story am I showing?</h3>
+        <p>The table mostly tells the universities’ side of the story. It doesn’t show students’ experiences, informal advice or what happens in actual disciplinary cases. D’Ignazio and Klein’s idea of examining power in <cite>Data Feminism</cite> helps me think about that gap. A tidy chart could hide how much is missing. Written rules alone can’t tell me whether those rules are applied fairly.</p>
+        <p>I also need to be fair to the universities. Calling a policy unclear because I couldn’t access it would turn a gap in my evidence into a judgement about the institution. The charts don’t include student names or individual cases. If I add students’ stories later, I’ll need to think about consent and which details could identify someone.</p>
 
-        <h3>What I would improve</h3>
-        <p>I would attach a source URL, access date and supporting excerpt to every code, resolve inaccessible material and ask a second coder to compare classifications. I would also separate policy permission, disclosure and consequences more clearly, then seek ethically collected, anonymised student perspectives. These changes would make uncertainty traceable and let a future visualisation address a wider question without claiming that the present sample already answers it.</p>
+        <h3>What I’d do next</h3>
+        <p>Next time, I’d keep the source link, access date and relevant passage next to every code. I’d follow up the missing policies and ask someone else to code the same material so we could compare our decisions. I’d also separate permission, declaration and penalties more clearly. That would make it easier to see where each judgement came from, and where more work is needed.</p>
 
         <aside class="workshop-callout" aria-label="Process and assistance note">
-          <h3>Process note</h3>
-          <p>AI-assisted tools helped compile policy records, prepare spreadsheets and charts, and draft the text. This post was revised from the saved workshop outputs on 3 November 2026; the policy source trail remains an area for further checking.</p>
+          <h3>A note on how I put this together</h3>
+          <p>I used AI-assisted tools to help organise the policy records, prepare the spreadsheets and charts, and draft the text. This post uses the saved workshop work and was revised on 3 November 2026. The links and evidence behind the original codes still need a fuller check.</p>
         </aside>
         <div class="workshop-references">
           <h3>Materials and references</h3>
@@ -109,19 +109,19 @@
       <header class="reflection-heading">
         <div>
           <p class="workshop-meta">Retrospective reflection · Published: <time datetime="2026-11-03">3 November 2026</time></p>
-          <h2 id="week-4-title">Week 4 — What counts as policy data?</h2>
+          <h2 id="week-4-title">Week 4 — Getting policies into a spreadsheet.</h2>
         </div>
       </header>
       <div class="workshop-body">
-        <p>This entry looks back at the saved collection and coding work used for the later visualisation. It is being written retrospectively, rather than presented as a diary recorded during the workshop.</p>
-        <h3>From a broad question to a table</h3>
-        <p>The initial comparison concerned university AI policies. Turning that interest into a dataset required a unit of analysis: one row per university. The columns separated university type, definition clarity, policy conditions, sanctions, guidance and declaration rules. This made comparison possible, but it also required interpreting complex documents as a small set of categories.</p>
-        <h3>What the coding could hide</h3>
-        <p>The saved notes reveal a problem with treating missing information as a finding. Nottingham’s incomplete policy access did not justify a confident judgement about its rules. Bristol’s record also required distinguishing an unestablished declaration requirement from an absent requirement. These cases showed why the coding key needed to explain both the categories and the limits of the evidence.</p>
-        <h3>Whose perspective was included?</h3>
-        <p>Official documents made institutional rules visible while leaving student experience outside the table. In relation to D’Ignazio and Klein’s “Examine Power” principle, that imbalance matters: the institution defines the categories of acceptable behaviour, but affected students may experience them differently. The dataset could compare recorded policy descriptions; it could not establish how rules were understood or applied.</p>
-        <h3>What I would change</h3>
-        <p>I would preserve a supporting excerpt and access date for each decision, distinguish missing evidence explicitly, and test the categories with another coder. I would also document why these twelve institutions were selected. That would make the collection process easier to question, reproduce and improve.</p>
+        <p>I’m writing this by looking back at the collection notes and spreadsheet used for the later charts. It’s a reflection on that earlier work, added on 3 November.</p>
+        <h3>Where I started</h3>
+        <p>The starting point was a broad question about university AI policies. To compare them, I needed one row per university and separate columns for definitions, permission, penalties, support and declaration rules. That gave the material a structure, but fitting a whole policy into a few categories meant making choices about what to keep.</p>
+        <h3>What didn’t fit neatly</h3>
+        <p>A filled-in table can look more complete than the evidence behind it. The notes on Nottingham showed that limited access was still a problem, even with codes in the cells. Bristol needed a different distinction: not finding a general declaration requirement didn’t prove there wasn’t one. The coding key needed room for these differences.</p>
+        <h3>Who was missing?</h3>
+        <p>The sources explained how universities described their own rules. They didn’t tell me how students understood those rules or what advice they received. This connects with D’Ignazio and Klein’s idea of examining power: the universities set the rules, while I chose how to group them in the table. Students’ experiences weren’t part of the dataset. I needed to keep that in mind when deciding what the table could answer.</p>
+        <h3>What I’d change</h3>
+        <p>I’d keep the original passages beside the codes and explain why I chose these twelve universities. I’d also ask someone else to try the categories on the same material. Seeing where we disagreed would help me improve the coding key before making more charts.</p>
       </div>
     </article>
 
