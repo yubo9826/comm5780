@@ -1,0 +1,411 @@
+{
+  "schema_version": 1,
+  "dataset_type": "public-photo-pilot",
+  "generated_on": "2026-11-07",
+  "title": "The same 15 photographs, two category schemes",
+  "scope_note": "An AI-assisted small pilot using 15 photographs already published in one person's curated photo journal. It is not a 480-post social-media dataset, a representative sample of a person, or evidence of an actual advertising profile.",
+  "source_page": "https://yubo9826.github.io/comm5780/Felix%20website/journal.html",
+  "sampling": {
+    "method": "First five photographs in source order from each existing journal chapter; deterministic, non-random selection.",
+    "chapters": [
+      "journey",
+      "leeds",
+      "daily"
+    ],
+    "per_chapter": 5,
+    "sample_size": 15,
+    "unit": "photograph"
+  },
+  "coding": {
+    "single_label_per_scheme": true,
+    "evidence_used": [
+      "visible image content",
+      "existing caption",
+      "existing chapter context"
+    ],
+    "assistance": "AI-assisted visual review and coding; no independent second coder or reliability estimate.",
+    "missing_original_categories": "The original 13-category scheme has no dedicated travel or food category; added categories are unavailable there rather than observed zero-frequency options.",
+    "limits": [
+      "One person's curated photographs do not represent their full activities, personality or platform feed.",
+      "The fixed first-five selection includes near-duplicate coastal views P03 and P04.",
+      "Labels depend partly on existing captions and chapter context; this is not a blind image-only test.",
+      "A visible brand does not establish advertising or payment; no commercial intent or personal trait is inferred.",
+      "Alternative labels are documented to make judgement visible, not counted as additional observations."
+    ]
+  },
+  "categories": [
+    {
+      "code": "family-partner",
+      "label": "Family/Partner"
+    },
+    {
+      "code": "outdoors",
+      "label": "Outdoors"
+    },
+    {
+      "code": "work",
+      "label": "Work"
+    },
+    {
+      "code": "jokes-memes",
+      "label": "Jokes/Memes"
+    },
+    {
+      "code": "product-advertising",
+      "label": "Product/Advertising"
+    },
+    {
+      "code": "politics-news",
+      "label": "Politics/News"
+    },
+    {
+      "code": "music-sport-film",
+      "label": "Music/Sport/Film"
+    },
+    {
+      "code": "animals",
+      "label": "Animals"
+    },
+    {
+      "code": "friends",
+      "label": "Friends"
+    },
+    {
+      "code": "local-events",
+      "label": "Local Events"
+    },
+    {
+      "code": "thoughts-reflections",
+      "label": "Thoughts/Reflections"
+    },
+    {
+      "code": "activism",
+      "label": "Activism"
+    },
+    {
+      "code": "lifestyle",
+      "label": "Lifestyle"
+    }
+  ],
+  "expanded_categories": [
+    {
+      "code": "family-partner",
+      "label": "Family/Partner"
+    },
+    {
+      "code": "outdoors",
+      "label": "Outdoors"
+    },
+    {
+      "code": "work",
+      "label": "Work"
+    },
+    {
+      "code": "jokes-memes",
+      "label": "Jokes/Memes"
+    },
+    {
+      "code": "product-advertising",
+      "label": "Product/Advertising"
+    },
+    {
+      "code": "politics-news",
+      "label": "Politics/News"
+    },
+    {
+      "code": "music-sport-film",
+      "label": "Music/Sport/Film"
+    },
+    {
+      "code": "animals",
+      "label": "Animals"
+    },
+    {
+      "code": "friends",
+      "label": "Friends"
+    },
+    {
+      "code": "local-events",
+      "label": "Local Events"
+    },
+    {
+      "code": "thoughts-reflections",
+      "label": "Thoughts/Reflections"
+    },
+    {
+      "code": "activism",
+      "label": "Activism"
+    },
+    {
+      "code": "lifestyle",
+      "label": "Lifestyle"
+    },
+    {
+      "code": "travel-sightseeing",
+      "label": "Travel & sightseeing"
+    },
+    {
+      "code": "food-drink",
+      "label": "Food & drink"
+    }
+  ],
+  "records": [
+    {
+      "id": "P01",
+      "chapter": "journey",
+      "image": "assets/journal/red-cable-car.jpg",
+      "caption": "A red cable car above the hills",
+      "original_category": "outdoors",
+      "expanded_category": "travel-sightseeing",
+      "reason": "A red cable car is suspended above an open landscape. The original scheme places this visible scene in Outdoors; the Wales journey context makes Travel & sightseeing a more specific expanded label. Outdoors remains a plausible alternative.",
+      "alternative_category": "outdoors"
+    },
+    {
+      "id": "P02",
+      "chapter": "journey",
+      "image": "assets/journal/train-window-hills.jpg",
+      "caption": "A window seat on the way",
+      "original_category": "outdoors",
+      "expanded_category": "travel-sightseeing",
+      "reason": "A window frames green hills, with parts of passengers visible at the edges. The landscape supports Outdoors. With the journal's journey context, Travel & sightseeing foregrounds the act of looking during a trip; Outdoors remains possible.",
+      "alternative_category": "outdoors"
+    },
+    {
+      "id": "P03",
+      "chapter": "journey",
+      "image": "assets/journal/llandudno-view.jpg",
+      "caption": "A view towards Llandudno",
+      "original_category": "outdoors",
+      "expanded_category": "travel-sightseeing",
+      "reason": "Hills, water and a signpost are visible through a window. Outdoors describes the landscape; Travel & sightseeing uses the existing Wales chapter and place caption to give it a trip-related reading. The broader Outdoors label is still reasonable.",
+      "alternative_category": "outdoors"
+    },
+    {
+      "id": "P04",
+      "chapter": "journey",
+      "image": "assets/journal/train-window-coast.jpg",
+      "caption": "Clouds over the coast",
+      "original_category": "outdoors",
+      "expanded_category": "travel-sightseeing",
+      "reason": "A window frames a coastal landscape and clouds. It is visually very similar to P03, but remains in this deterministic sample. Outdoors describes the visible setting; the existing journey context supports the added Travel & sightseeing label.",
+      "alternative_category": "outdoors"
+    },
+    {
+      "id": "P05",
+      "chapter": "journey",
+      "image": "assets/journal/coastal-grassland.jpg",
+      "caption": "A bright day by the sea",
+      "original_category": "outdoors",
+      "expanded_category": "travel-sightseeing",
+      "reason": "An open grassy headland, sea and sky dominate the photograph. Outdoors fits the original scheme. Its position in the Welsh-coast journey chapter supports Travel & sightseeing when that category is available; the image alone also supports Outdoors.",
+      "alternative_category": "outdoors"
+    },
+    {
+      "id": "P06",
+      "chapter": "leeds",
+      "image": "assets/journal/leeds-tower.jpg",
+      "caption": "A familiar city tower",
+      "original_category": "outdoors",
+      "expanded_category": "outdoors",
+      "reason": "A stone tower and city buildings are photographed from outside. Outdoors remains the primary label in both schemes. Travel & sightseeing is a plausible alternative reading of urban architecture, but the photograph does not establish whether the visit was tourism.",
+      "alternative_category": "travel-sightseeing"
+    },
+    {
+      "id": "P07",
+      "chapter": "leeds",
+      "image": "assets/journal/park-after-dark.jpg",
+      "caption": "A quiet park after dark",
+      "original_category": "outdoors",
+      "expanded_category": "outdoors",
+      "reason": "A large tree, park path and bench dominate the scene, with a small seated figure. Outdoors is the primary setting. Lifestyle could describe an everyday pause in a park, but no relationship, occupation or personal trait is inferred from the figure.",
+      "alternative_category": "lifestyle"
+    },
+    {
+      "id": "P08",
+      "chapter": "leeds",
+      "image": "assets/journal/leeds-buses.jpg",
+      "caption": "A bright afternoon in the city",
+      "original_category": "outdoors",
+      "expanded_category": "outdoors",
+      "reason": "A city street, historic building and vehicles form the main scene. Outdoors fits both schemes. Travel & sightseeing is another possible label if the city walk is emphasised, but the image does not reveal the photographer's purpose.",
+      "alternative_category": "travel-sightseeing"
+    },
+    {
+      "id": "P09",
+      "chapter": "leeds",
+      "image": "assets/journal/city-view-plush.jpg",
+      "caption": "A small companion with a big view",
+      "original_category": "lifestyle",
+      "expanded_category": "lifestyle",
+      "reason": "A small plush toy sits in the foreground of an indoor window view over the city. Lifestyle foregrounds the personal object and domestic viewpoint. Outdoors would instead privilege the skyline; this makes the classification choice visible.",
+      "alternative_category": "outdoors"
+    },
+    {
+      "id": "P10",
+      "chapter": "leeds",
+      "image": "assets/journal/swans-on-the-lake.jpg",
+      "caption": "Swans on the lake",
+      "original_category": "animals",
+      "expanded_category": "animals",
+      "reason": "A group of water birds is visible near the lake shore. Animals prioritises the identifiable subject in both schemes. Outdoors is an alternative because water, vegetation and sky also occupy much of the frame.",
+      "alternative_category": "outdoors"
+    },
+    {
+      "id": "P11",
+      "chapter": "daily",
+      "image": "assets/journal/custard-tarts.jpg",
+      "caption": "A plate of custard tarts",
+      "original_category": "lifestyle",
+      "expanded_category": "food-drink",
+      "reason": "Five custard tarts on a plate are the main visible subject. Lifestyle is the broad original category available for this everyday scene. Food & drink gives the subject a more specific expanded label; Lifestyle remains a broader alternative.",
+      "alternative_category": "lifestyle"
+    },
+    {
+      "id": "P12",
+      "chapter": "daily",
+      "image": "assets/journal/gin-and-tonic.jpg",
+      "caption": "A drink with a view",
+      "original_category": "lifestyle",
+      "expanded_category": "food-drink",
+      "reason": "A bottle and prepared drink are the dominant subjects. The original scheme uses Lifestyle; the expanded scheme uses Food & drink. Product/Advertising is an alternative product-focused reading, but a visible brand does not establish advertising or payment.",
+      "alternative_category": "product-advertising"
+    },
+    {
+      "id": "P13",
+      "chapter": "daily",
+      "image": "assets/journal/whiskey-and-ice.jpg",
+      "caption": "A glass of whiskey and ice",
+      "original_category": "lifestyle",
+      "expanded_category": "food-drink",
+      "reason": "A whiskey bottle and glass of drink with ice and citrus dominate the frame. Lifestyle becomes Food & drink in the expanded scheme. Product/Advertising is an alternative subject reading; commercial intent is not inferred from a branded bottle.",
+      "alternative_category": "product-advertising"
+    },
+    {
+      "id": "P14",
+      "chapter": "daily",
+      "image": "assets/journal/green-plush-toy.jpg",
+      "caption": "A colourful new friend",
+      "original_category": "lifestyle",
+      "expanded_category": "lifestyle",
+      "reason": "A hand holds a green and purple plush toy in a shop. Lifestyle describes this everyday object scene. Product/Advertising is a plausible alternative if the object display is emphasised, but the photograph alone does not establish an advertisement.",
+      "alternative_category": "product-advertising"
+    },
+    {
+      "id": "P15",
+      "chapter": "daily",
+      "image": "assets/journal/dinner-at-sunset.jpg",
+      "caption": "Dinner as the city lights come on",
+      "original_category": "lifestyle",
+      "expanded_category": "food-drink",
+      "reason": "A bowl, glass and candle sit beside a city-view window. The existing dinner caption and foreground meal support Food & drink when available. Lifestyle remains a strong alternative for the domestic atmosphere; the food reading is a coding choice rather than the only possible description.",
+      "alternative_category": "lifestyle"
+    }
+  ],
+  "counts": [
+    {
+      "category": "family-partner",
+      "label": "Family/Partner",
+      "original_count": 0,
+      "expanded_count": 0,
+      "original_available": true
+    },
+    {
+      "category": "outdoors",
+      "label": "Outdoors",
+      "original_count": 8,
+      "expanded_count": 3,
+      "original_available": true
+    },
+    {
+      "category": "work",
+      "label": "Work",
+      "original_count": 0,
+      "expanded_count": 0,
+      "original_available": true
+    },
+    {
+      "category": "jokes-memes",
+      "label": "Jokes/Memes",
+      "original_count": 0,
+      "expanded_count": 0,
+      "original_available": true
+    },
+    {
+      "category": "product-advertising",
+      "label": "Product/Advertising",
+      "original_count": 0,
+      "expanded_count": 0,
+      "original_available": true
+    },
+    {
+      "category": "politics-news",
+      "label": "Politics/News",
+      "original_count": 0,
+      "expanded_count": 0,
+      "original_available": true
+    },
+    {
+      "category": "music-sport-film",
+      "label": "Music/Sport/Film",
+      "original_count": 0,
+      "expanded_count": 0,
+      "original_available": true
+    },
+    {
+      "category": "animals",
+      "label": "Animals",
+      "original_count": 1,
+      "expanded_count": 1,
+      "original_available": true
+    },
+    {
+      "category": "friends",
+      "label": "Friends",
+      "original_count": 0,
+      "expanded_count": 0,
+      "original_available": true
+    },
+    {
+      "category": "local-events",
+      "label": "Local Events",
+      "original_count": 0,
+      "expanded_count": 0,
+      "original_available": true
+    },
+    {
+      "category": "thoughts-reflections",
+      "label": "Thoughts/Reflections",
+      "original_count": 0,
+      "expanded_count": 0,
+      "original_available": true
+    },
+    {
+      "category": "activism",
+      "label": "Activism",
+      "original_count": 0,
+      "expanded_count": 0,
+      "original_available": true
+    },
+    {
+      "category": "lifestyle",
+      "label": "Lifestyle",
+      "original_count": 6,
+      "expanded_count": 2,
+      "original_available": true
+    },
+    {
+      "category": "travel-sightseeing",
+      "label": "Travel & sightseeing",
+      "original_count": 0,
+      "expanded_count": 5,
+      "original_available": false
+    },
+    {
+      "category": "food-drink",
+      "label": "Food & drink",
+      "original_count": 0,
+      "expanded_count": 4,
+      "original_available": false
+    }
+  ]
+}

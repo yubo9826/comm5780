@@ -1,0 +1,16 @@
+category,label,original_count,expanded_count,original_available
+family-partner,Family/Partner,0,0,True
+outdoors,Outdoors,8,3,True
+work,Work,0,0,True
+jokes-memes,Jokes/Memes,0,0,True
+product-advertising,Product/Advertising,0,0,True
+politics-news,Politics/News,0,0,True
+music-sport-film,Music/Sport/Film,0,0,True
+animals,Animals,1,1,True
+friends,Friends,0,0,True
+local-events,Local Events,0,0,True
+thoughts-reflections,Thoughts/Reflections,0,0,True
+activism,Activism,0,0,True
+lifestyle,Lifestyle,6,2,True
+travel-sightseeing,Travel & sightseeing,0,5,False
+food-drink,Food & drink,0,4,False
