@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Felix’s Digital Practices workshop reflections on collecting, classifying and visualising university AI policy data, with evidence, ethical questions and limitations.">
+  <meta name="description" content="Felix’s Digital Practices workshop reflections on algorithmic identity, photo classification and university AI policy data, with evidence, ethical questions and limitations.">
   <title>Workshop Reflections — Felix</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,11 +29,69 @@
       <h1 id="reflection-title">Workshop<br><span>reflections.</span></h1>
       <p class="workshop-intro">What I worked on in the workshops, what I learned from it, and what I’d change next time.</p>
       <nav class="workshop-jumps" aria-label="Reflection entries">
+        <a href="#week-6">Week 6 · Identity &amp; classification</a>
         <a href="#week-5">Week 5 · Data visualisation</a>
         <a href="#week-4">Week 4 · Data collection</a>
         <a href="development.html">Website development notes</a>
       </nav>
     </section>
+
+    <article class="workshop-entry section-block" id="week-6" aria-labelledby="week-6-title">
+      <div class="section-label"><span>06</span> IDENTITY &amp; CLASSIFICATION</div>
+      <header class="reflection-heading">
+        <div>
+          <p class="workshop-meta">Pilot and preparation · <time datetime="2026-11-07">7 November 2026</time></p>
+          <h2 id="week-6-title">Week 6 — Same photos, different labels.</h2>
+        </div>
+      </header>
+      <div class="workshop-body">
+        <aside class="workshop-callout" aria-label="Scope of this week's work">
+          <h3>What’s done so far</h3>
+          <p>This update is a small classification experiment using fifteen photos already in my journal, plus a tool and blank record sheet for the next step. The full task — fifteen posts from each of thirty-two friends, and checking an advertising profile — is still to do.</p>
+        </aside>
+        <p class="evidence-links"><a href="identity-lab.html">Try the classification lab →</a><br><a href="assets/week6/pilot.csv" download>Download the fifteen-photo coding record</a> · <a href="assets/week6/anonymous-post-template.xlsx" download>Get the blank Excel record sheet</a></p>
+
+        <h3>Starting with something I can check</h3>
+        <p>This week’s task asks how platforms come to “know” us through data. Before collecting friends’ posts, I wanted a smaller example where the source and the coding decisions could stay visible. The starting material was my own photo journal: the first five photos in each of its three chapters, giving fifteen in total.</p>
+        <p>That’s a deliberately balanced sample of an already selected collection. It isn’t my fifteen latest social media posts, and it doesn’t stand in for thirty-two people. Even before choosing categories, I’ve made the sample look a certain way by including the same number of photos from Wales, Leeds and everyday life. Similar coastal and window views also stay in the sample because I followed the first-five rule, rather than choosing fifteen different subjects.</p>
+
+        <h3>Where the labels get awkward</h3>
+        <p>The first pass uses the thirteen categories in the workshop instructions, with one category per photo. The rule is to code the main visible subject, using the existing caption for context. That gives eight “Outdoors”, six “Lifestyle” and one “Animals”. The other categories have zero in this sample.</p>
+        <p>Some decisions are less obvious than those numbers look. A plush toy goes under “Lifestyle”, not “Animals”. Dinner by a window goes under “Lifestyle” because the meal is the main subject, even though there’s a city view behind it. The coding record keeps an alternative label and a reason beside each choice, so a reader can disagree with it.</p>
+        <p>There are no photos coded as “Work”. That clearly doesn’t mean I never study or work. It means this little selection doesn’t show it. This is the part I need to remember when a chart starts looking like a description of a whole person.</p>
+
+        <h3>Changing the categories, keeping the photos</h3>
+        <p>The second pass adds “Travel &amp; sightseeing” and “Food &amp; drink”. Everything else stays the same: the fifteen photos, their captions and the one-category rule. The five Welsh-coast images now go into travel, while four food and drink images leave the broad lifestyle category.</p>
+        <p>Nine of the fifteen labels change. The new totals are five travel, four food and drink, three outdoors, two lifestyle and one animals. Nothing about the photos changed; the available boxes did. The second version is more specific for this collection, but I still wouldn’t call it the true version of my identity.</p>
+        <figure class="workshop-figure">
+          <img src="assets/week6/category-comparison.png" alt="Comparison of fifteen journal photos under two coding schemes: the original has Outdoors 8, Lifestyle 6 and Animals 1; the expanded scheme has Travel and sightseeing 5, Food and drink 4, Outdoors 3, Lifestyle 2 and Animals 1. Nine photos receive a different label." loading="lazy">
+          <figcaption>The same fifteen photos, coded twice. This is a comparison of coding choices, not an advertising profile or a result from the full thirty-two-person task. <a href="assets/week6/counts.csv" download>Download the counts</a>.</figcaption>
+        </figure>
+
+        <h3>What this says about being “known” online</h3>
+        <p>Cheney-Lippold’s explanation of algorithmic identity helps here: data about someone gets interpreted, rather than simply revealing who they are. In his <a href="https://nyupress.org/blog/2017/05/03/we-are-data/">NYU Press interview</a>, he describes how these interpretations can change as new data arrives. My small example shows one reason to question a label: its meaning depends on the rules used to produce it.</p>
+        <p>I’m choosing both the pictures and the coding rules here. A platform could be working with other information and a different purpose. This experiment can show how a classification changes; it can’t tell me what a real platform has inferred about me, or explain its hidden algorithm. I still need to look at an actual advertising profile for that part of the exercise, and even that screen will only show part of the process.</p>
+
+        <h3>Making the next step easier</h3>
+        <p>The record tool has thirty-two anonymous IDs and fifteen slots for each person. It counts a post only after it has one category. A person stays out of the two-category scatter plot until all fifteen posts are coded, so a missing record doesn’t quietly become a zero. The Excel sheet provides another way to keep the counts.</p>
+        <p>For the full task, I’ll need to record the collection date and sampling rule, keep the thirteen original categories for the first pass, and make notes when a post could fit more than one. I’ll also keep names, account handles and private post details out of the public portfolio. Anonymous numbers alone wouldn’t make a recognisable screenshot private.</p>
+        <p>The next useful comparison is between a description I choose for myself and the categories a platform actually shows me. For now, the result is narrower: a clear example of how much a classification can change before the underlying material changes at all.</p>
+
+        <aside class="workshop-callout" aria-label="Process and assistance note">
+          <h3>A note on this update</h3>
+          <p>The pilot coding, chart, record sheet, web tool and draft reflection were prepared with AI assistance. The coding is open for review in the downloadable record. No friends’ posts or personal advertising-profile data were used, and the blank collection slots contain no invented observations.</p>
+        </aside>
+        <div class="workshop-references">
+          <h3>Materials and references</h3>
+          <ul>
+            <li>University of Leeds, COMM5780M. <a href="https://minerva.leeds.ac.uk/ultra/courses/_574716_1/document/_14202657_1?linkContentId=_14202657_1">“Identity, Algorithmic Identity, and Data” workshop task</a>. The input/output/process structure, thirty-two × fifteen exercise and thirteen starting categories come from this guide. University sign-in required; checked 7 November 2026.</li>
+            <li>Cheney-Lippold, J. (2017). <a href="https://nyupress.org/blog/2017/05/03/we-are-data/">“An Interview with John Cheney-Lippold, Author of <cite>We Are Data</cite>”</a>. NYU Press, 3 May. Used here to think through changing classifications alongside the workshop guide.</li>
+            <li>Sumpter, D. (2018). <cite>Outnumbered</cite>. The classification exercise follows the teaching team’s adaptation of Sumpter’s method, as described in the workshop instructions.</li>
+            <li>Source material: fifteen existing images and captions from <a href="journal.html#collection">my public photo journal</a>, sampled and coded on 7 November 2026. These are photographs in a curated portfolio, not observed social media posts.</li>
+          </ul>
+        </div>
+      </div>
+    </article>
 
     <article class="workshop-entry section-block" id="week-5" aria-labelledby="week-5-title">
       <div class="section-label"><span>05</span> DATA VISUALISATION</div>
