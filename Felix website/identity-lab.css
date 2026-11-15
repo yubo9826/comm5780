@@ -58,6 +58,18 @@
 .identity-lab .lab-pilot-card h3 { font-size: 22px; }
 .identity-lab .lab-pilot-card p { color: #58675b; font-size: 12px; line-height: 1.75; }
 .identity-lab .lab-pilot-card .lab-pilot-labels { color: #8e4e39; font-size: 11px; }
+.identity-lab .lab-review-cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin: 24px 0 16px; }
+.identity-lab .lab-review-card { display: flex; align-items: start; gap: 14px; min-width: 0; padding: 14px; border: 1px solid var(--line); border-radius: 8px; background: #fbfaf6; }
+.identity-lab .lab-review-card img { display: block; flex: 0 0 auto; width: clamp(60px, 6vw, 86px); aspect-ratio: 1; border-radius: 5px; object-fit: cover; }
+.identity-lab .lab-review-card h3 { font-size: 20px; }
+.identity-lab .lab-review-original, .identity-lab .lab-review-reason { margin: 6px 0 0; color: #526157; font-size: 12px; line-height: 1.6; }
+.identity-lab .lab-review-original { color: #86513f; font-weight: 600; }
+.identity-lab .lab-review-choice { display: flex; align-items: center; gap: 8px; width: fit-content; min-height: 36px; margin-top: 4px; color: #34473e; font-size: 12px; font-weight: 700; cursor: pointer; }
+.identity-lab .lab-review-choice input { width: 16px; height: 16px; margin: 0; accent-color: #34473e; }
+.identity-lab .lab-review-results { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 20px; margin-bottom: 20px; }
+.identity-lab .lab-review-table { flex: 1 1 320px; max-width: 430px; margin: 0; }
+.identity-lab .lab-review-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; }
+.identity-lab #label-review-progress { margin: 0; color: #435d47; font-size: 13px; }
 @media (max-width: 760px) {
   .identity-lab .lab-wrap { width: calc(100% - 40px); }
   .identity-lab .lab-hero { padding-top: 64px; padding-bottom: 56px; }
@@ -65,6 +77,7 @@
   .identity-lab .lab-post-row { grid-template-columns: 1fr 1fr; gap: 16px; padding: 18px; }
   .identity-lab .lab-post-number { grid-column: 1 / -1; padding-top: 0; }
   .identity-lab .lab-pilot-grid { grid-template-columns: 1fr 1fr; }
+  .identity-lab .lab-review-cards { grid-template-columns: 1fr; }
   .identity-lab .lab-category-key { grid-template-columns: 1fr; }
 }
 @media (max-width: 480px) {

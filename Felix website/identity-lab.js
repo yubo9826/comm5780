@@ -10,6 +10,11 @@
   ]);
   const CATEGORY_CODES = new Set(CATEGORIES.map(([code]) => code));
   const LABELS = Object.fromEntries(CATEGORIES);
+  const REVIEW_CASES = [
+    ['P07', 'Outdoors focuses on the tree and park path. Lifestyle reads the scene as an everyday pause.'],
+    ['P09', 'Lifestyle puts the toy and the view from inside first. Outdoors gives more weight to the skyline.'],
+    ['P10', 'Animals puts the swans first. Outdoors treats the lake and its surroundings as the main subject.'],
+  ];
   const HEADERS = ['person_id', 'post_id', 'category', 'notes'];
   const PEOPLE = Array.from({ length: 32 }, (_, i) => `P${String(i + 1).padStart(2, '0')}`);
   const POSTS = Array.from({ length: 15 }, (_, i) => String(i + 1).padStart(2, '0'));
@@ -264,6 +269,75 @@
   window.addEventListener('beforeunload', (event) => { if (dirty) { event.preventDefault(); event.returnValue = ''; } });
   renderEditor(); renderSummary();
 
+  function renderLabelReview(photos) {
+    const reviewed = REVIEW_CASES.map(([id, reason]) => ({ photo: photos.find((record) => record.id === id), reason }));
+    const invalid = reviewed.some(({ photo }) => !photo || !CATEGORY_CODES.has(photo.original_category) ||
+      !CATEGORY_CODES.has(photo.alternative_category) || photo.original_category === photo.alternative_category);
+    if (invalid) {
+      $('label-review-status').hidden = false;
+      return;
+    }
+
+    const cards = $('label-review-cards');
+    const choices = reviewed.map(({ photo, reason }) => {
+      const card = make('article', undefined, 'lab-review-card');
+      if (/^assets\/journal\/[a-z0-9-]+\.jpg$/.test(photo.image)) {
+        const thumbnail = make('img');
+        thumbnail.src = photo.image;
+        thumbnail.alt = '';
+        thumbnail.loading = 'lazy';
+        card.append(thumbnail);
+      }
+      const details = make('div');
+      const title = make('h3', photo.caption);
+      title.id = `review-title-${photo.id}`;
+      const original = make('p', `Original label: ${LABELS[photo.original_category]}`, 'lab-review-original');
+      const explanation = make('p', reason, 'lab-review-reason');
+      const label = make('label', undefined, 'lab-review-choice');
+      const checkbox = make('input');
+      checkbox.type = 'checkbox';
+      const choiceText = make('span', `Try ${LABELS[photo.alternative_category]}`);
+      choiceText.id = `review-choice-${photo.id}`;
+      checkbox.setAttribute('aria-labelledby', `${choiceText.id} ${title.id}`);
+      label.append(checkbox, choiceText);
+      details.append(title, original, explanation, label);
+      card.append(details);
+      cards.append(card);
+      return { photo, checkbox };
+    });
+
+    const affectedLabels = new Set(reviewed.flatMap(({ photo }) => [photo.original_category, photo.alternative_category]));
+    const original = Object.fromEntries([...affectedLabels].map((code) => [code, photos.filter((photo) => photo.original_category === code).length]));
+    const results = [...affectedLabels].map((code) => {
+      const row = make('tr');
+      const label = make('th', LABELS[code]);
+      label.scope = 'row';
+      const current = make('td');
+      row.append(label, make('td', original[code]), current);
+      $('label-review-counts').append(row);
+      return { code, current };
+    });
+
+    function updateCounts() {
+      const counts = { ...original };
+      const changes = choices.filter(({ checkbox }) => checkbox.checked);
+      changes.forEach(({ photo }) => {
+        counts[photo.original_category] -= 1;
+        counts[photo.alternative_category] += 1;
+      });
+      results.forEach(({ code, current }) => { current.textContent = counts[code]; });
+      $('label-review-progress').textContent = `${changes.length} of 3 labels changed`;
+    }
+
+    cards.addEventListener('change', updateCounts);
+    $('label-review-reset').addEventListener('click', () => {
+      choices.forEach(({ checkbox }) => { checkbox.checked = false; });
+      updateCounts();
+    });
+    updateCounts();
+    $('label-review-content').hidden = false;
+  }
+
   async function loadPilot() {
     try {
       const response = await fetch('assets/week6/pilot.json', { credentials: 'omit' });
@@ -290,8 +364,10 @@
       $('pilot-scope').textContent = data.scope_note || 'A fifteen-photo pilot using existing public portfolio images. It is kept separate from the anonymous-post records below.';
       $('pilot-status').textContent = '15 portfolio photos · 3 chapters · a category test, separate from the blank 32-person tool';
       $('pilot-content').hidden = false;
+      renderLabelReview(data.records);
     } catch {
       $('pilot-status').textContent = 'The photo pilot is unavailable in this preview. The blank coding tool below still works; the reflection contains the pilot discussion.';
+      $('label-review-status').hidden = false;
     }
   }
   loadPilot();

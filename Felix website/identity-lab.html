@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="A small classification lab for the Week 6 workshop: a public-photo pilot and a separate, blank anonymous-post coding tool.">
+  <meta name="description" content="A public-photo classification pilot, a Week 7 label review, and a separate anonymous-post coding tool.">
   <title>Post Classification Lab — Felix</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,14 +23,14 @@
       <a href="reflection.html">Reflections</a>
       <a href="identity-lab.html" aria-current="page">Lab</a>
     </nav>
-    <a class="header-note" href="reflection.html#week-6">Week 6 <span>↗</span></a>
+    <a class="header-note" href="reflection.html#week-7">Week 6–7 <span>↗</span></a>
   </header>
   <main id="main">
     <section class="lab-hero lab-wrap" aria-labelledby="lab-title">
-      <p class="eyebrow"><span class="eyebrow-dot"></span> WEEK 6 · POST CLASSIFICATION</p>
+      <p class="eyebrow"><span class="eyebrow-dot"></span> WEEKS 6–7 · POST CLASSIFICATION</p>
       <h1 id="lab-title">What does a label<br><span>leave out?</span></h1>
       <p class="lab-lead">A small photo pilot, followed by a blank tool for classifying anonymous posts. Try the categories, compare the counts, and keep the limits of those labels in mind.</p>
-      <nav class="lab-shortcuts" aria-label="On this page"><a href="#pilot">View the photo pilot</a><a href="#records">Code anonymous posts</a><a href="#comparison">Compare two categories</a></nav>
+      <nav class="lab-shortcuts" aria-label="On this page"><a href="#pilot">View the photo pilot</a><a href="#label-review">Try a different label</a><a href="#records">Code anonymous posts</a><a href="#comparison">Compare two categories</a></nav>
     </section>
 
     <section class="lab-section lab-wrap" id="pilot" aria-labelledby="pilot-title">
@@ -44,6 +44,31 @@
         <details class="lab-details"><summary>Look at the fifteen photo decisions</summary><div class="lab-pilot-grid" id="pilot-cards"></div></details>
       </div>
       <a class="text-link" href="reflection.html#week-6">Read the reflection on this pilot <span aria-hidden="true">→</span></a>
+    </section>
+
+    <section class="lab-section lab-wrap" id="label-review" aria-labelledby="label-review-title">
+      <p class="section-label">WEEK 7 · REFLECTIVE PAUSE</p>
+      <h2 id="label-review-title">Try a different label</h2>
+      <p class="lab-copy">Three photos from the original fifteen have a second suggested label. Try each alternative to see how the counts change. Each photo gets one of the original thirteen labels.</p>
+      <p class="lab-status" id="label-review-status" role="status" hidden>The label review needs the photo pilot. You can still read about all three choices in the Week 7 reflection.</p>
+      <div id="label-review-content" hidden>
+        <div class="lab-review-cards" id="label-review-cards"></div>
+        <div class="lab-review-results">
+          <div class="lab-table-scroll lab-review-table">
+            <table>
+              <caption>Counts for the three labels across all 15 photos</caption>
+              <thead><tr><th scope="col">Label</th><th scope="col">Original</th><th scope="col">With your choices</th></tr></thead>
+              <tbody id="label-review-counts"></tbody>
+            </table>
+          </div>
+          <div class="lab-review-actions">
+            <p id="label-review-progress" role="status"></p>
+            <button type="button" class="lab-secondary" id="label-review-reset">Reset to original labels</button>
+          </div>
+        </div>
+      </div>
+      <p class="lab-small">Checking whether two people agree would mean asking someone else to label the same photos independently.</p>
+      <a class="text-link" href="reflection.html#week-7">Read the Week 7 reflection <span aria-hidden="true">→</span></a>
     </section>
 
     <section class="lab-section lab-wrap" id="records" aria-labelledby="records-title">
@@ -81,7 +106,7 @@
       <p class="lab-small">People with the same pair of counts share one bubble. A number inside a bubble is the number of people at that position.</p>
       <div class="lab-table-scroll" tabindex="0" aria-label="Exact scatter plot coordinates"><table id="plot-table"><caption>Exact counts for complete people</caption><thead></thead><tbody></tbody></table></div>
     </section>
-    <aside class="page-next section-block"><div><p class="next-kicker">BACK TO THE WORKSHOP</p><h2>The choices behind the labels.</h2><p>Read how the pilot connects to the Week 6 questions about classification and identity.</p></div><a class="text-link" href="reflection.html#week-6">Read the reflection <span aria-hidden="true">→</span></a></aside>
+    <aside class="page-next section-block"><div><p class="next-kicker">WEEKS 6–7 · REFLECTIONS</p><h2>The choices behind the labels.</h2><p>Read how revisiting the pilot changed what I took away from the original counts.</p></div><a class="text-link" href="reflection.html#week-7">Read the reflection <span aria-hidden="true">→</span></a></aside>
     <noscript><p class="lab-wrap lab-notice">JavaScript is needed to use this local coding tool. You can still read the workshop reflection and download the Excel template.</p></noscript>
   </main>
   <footer class="site-footer"><a class="wordmark" href="index.html" aria-label="Back to home">F<span>.</span></a><p>Made by Felix <span>·</span> Digital Media, University of Leeds</p><a class="back-to-top" href="#main">Back to top ↑</a></footer>
